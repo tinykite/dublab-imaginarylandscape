@@ -1,0 +1,60 @@
+audio {
+	display: none;
+}
+
+.podcast {
+	padding: 7rem 0;
+	background: var(--backgroundColor, #000);
+
+	&__player {
+		max-width: 670px;
+		margin: 0 auto;
+		display: flex;
+		overflow: hidden;
+	}
+
+	&__progressBar {
+		height: 10px;
+		background: #000;
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	&__progressBar-playing {
+		height: 10px;
+		background: #fff;
+	}
+
+	&__button {
+		outline: none;
+		background: none;
+		border: none;
+		width: 25px;
+		height: 25px;
+		padding-top: 0.75rem;
+		margin-right: 1.5rem;
+	}
+
+	&__title {
+		font-family: 'Adieu', sans-serif;
+		font-size: 32px;
+		margin: 0;
+		padding: 0;
+	}
+
+	&--seafoam {
+		--backgroundColor: #B7D6BB;
+	}
+
+	&__meta {
+		list-style: none;
+		margin: 0;
+		padding: 1rem 0 0;
+		display: flex;
+
+
+		&Item {
+			margin-right: 0.25rem;
+		}
+	}
+}
