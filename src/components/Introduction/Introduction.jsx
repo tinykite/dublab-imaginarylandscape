@@ -13,7 +13,7 @@ const Introduction = () => {
       <p className="Introduction__text">For those reasons, several episodes of the show have been selected and will be aired and archived on dublab. Newly edited and re-mastered, those episodes feature unreleased works and live performances from the composers included in the archival series: David Behrman, Harold Budd, Alvin Curran, Brian Eno, Rolf Julius, Steve Reich, Terry Riley, Frederic Rzewski, Morton Subotnick, Toru Takemitsu, Chen Yi, and Frank Zappa.</p>
       <p className="Introduction__text">Project coordination - Samuel Lamontagne</p>
       <p className="Introduction__text">Graphic design - Jay Ramirez</p>
-      <p className="Introduction__text">Web Design - Dakota Sexton</p>
+      <p className="Introduction__text">Web design - Dakota Sexton</p>
     </div>
   )
 }
