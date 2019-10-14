@@ -1,28 +1,55 @@
+:root {
+	--black: #000;
+	--white: #FFF;
+}
+
 audio {
 	display: none;
 }
 
 .podcast {
 	padding: 7rem 0;
-	background: var(--backgroundColor, #000);
+
+	&--light {
+		color: var(--black);
+	}
+
+	&--dark {
+		color: var(--white);
+	}
 
 	&__player {
 		max-width: 670px;
 		margin: 0 auto;
 		display: flex;
 		overflow: hidden;
+		align-items: flex-start;
 	}
 
 	&__progressBar {
 		height: 10px;
-		background: #000;
-		width: 100%;
+		width: 620px;
 		margin-top: 1rem;
+	}
+
+	&__progressBar--light {
+		background-color: var(--black);
+	}
+
+	&__progressBar--dark {
+		background-color: var(--white);
 	}
 
 	&__progressBar-playing {
 		height: 10px;
-		background: #fff;
+	}
+
+	&__progressBar-playing--light {
+		background-color: var(--white);
+	}
+
+	&__progressBar-playing--dark {
+		background-color: var(--black);
 	}
 
 	&__button {
@@ -31,8 +58,16 @@ audio {
 		border: none;
 		width: 25px;
 		height: 25px;
-		padding-top: 0.75rem;
+		padding-top: 0.35rem;
 		margin-right: 1.5rem;
+
+		&--light {
+			fill: black;
+		}
+
+		&--dark {
+			fill: white;
+		}
 	}
 
 	&__title {
@@ -40,10 +75,7 @@ audio {
 		font-size: 32px;
 		margin: 0;
 		padding: 0;
-	}
-
-	&--seafoam {
-		--backgroundColor: #B7D6BB;
+		font-weight: 100;
 	}
 
 	&__meta {
@@ -51,7 +83,7 @@ audio {
 		margin: 0;
 		padding: 1rem 0 0;
 		display: flex;
-
+		font-style: italic;
 
 		&Item {
 			margin-right: 0.25rem;

@@ -3,8 +3,8 @@ import AudioPlayerItem from './AudioPlayerItem';
 
 const AudioPlayer = ({podcasts, ...props}) => (
 		<>
-		{podcasts && podcasts.map(({title, theme, year, city, location, audioUrl}, index) =>
-		<AudioPlayerItem key={'AudioPlayerItem-' + index} title={title} theme={theme} year={year} city={city} location={location} audioUrl={audioUrl} />
+		{podcasts && podcasts.map(({title, background, theme, year, city, location, time, audioUrl}, index) =>
+		<AudioPlayerItem key={'AudioPlayerItem-' + index} background={background} title={title} time={time} theme={theme} year={year} city={city} location={location} audioUrl={audioUrl} />
 		)}
 		</>
 )

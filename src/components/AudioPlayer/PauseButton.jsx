@@ -1,15 +1,15 @@
 import React from 'react';
 
-const PauseButton = () => {
+const PauseButton = ({theme}) => {
 	return(
 		<svg
       xmlns="http://www.w3.org/2000/svg"
       width="21"
       height="25"
       viewBox="0 0 21 25"
+      className={`podcast__button podcast__button--${theme}`}
     >
       <g
-        fill="#000"
         fillRule="nonzero"
         stroke="none"
         strokeWidth="1"

@@ -1,15 +1,15 @@
 import React from 'react';
 
-const PlayButton = () => {
+const PlayButton = ({theme}) => {
 	return(
 		<svg
       xmlns="http://www.w3.org/2000/svg"
       width="25"
       height="25"
       viewBox="0 0 25 25"
+      className={`podcast__button podcast__button--${theme}`}
     >
       <path
-        fill="#000"
         fillRule="nonzero"
         stroke="none"
         strokeWidth="1"
