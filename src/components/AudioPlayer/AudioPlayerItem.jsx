@@ -5,10 +5,10 @@ import PlayButton from './PlayButton.jsx';
 import { motion, useTransform } from 'framer-motion';
 
 const AudioPlayerItem = ({title, theme, background, year, city, location, time, audioUrl}) => {
-	const [playState, setPlayState] = useState(false); 
+	const [playState, setPlayState] = useState(false);
 	const [progressBar, setProgressBar] = useState(0);
 	const ref = useRef();
-	
+
 	const backgroundColor = {
 		background: `${background}`
 	}
@@ -29,7 +29,7 @@ const AudioPlayerItem = ({title, theme, background, year, city, location, time, 
 		let progress = (currentTime / duration) * 100;
 		setProgressBar(progress);
 		// const scrubber = `width: ${progressBar}%`;
-		console.log(progressBar);
+		//console.log(progressBar);
 		// console.log(`${currentTime} of ${duration}, which is ${progress}%`);
 	}
 
@@ -48,7 +48,7 @@ const AudioPlayerItem = ({title, theme, background, year, city, location, time, 
 		<motion.button className="podcast__button" onClick={() => setPlayState(!playState)}>
 			{playState ? (<PauseButton theme={theme} />) : (<PlayButton theme={theme} />)}
     </motion.button>
-		<div class="podcast__main">
+		<div className="podcast__main">
 		<h2 className="podcast__title">{title}</h2>
 		<div  className={`podcast__progressBar podcast__progressBar--${theme}`}>
 			<div style={{width: progressBar + "%"}} className={`podcast__progressBar-playing podcast__progressBar-playing--${theme}`}></div>
