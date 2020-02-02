@@ -1,93 +1,114 @@
 :root {
-	--black: #000;
-	--white: #FFF;
+  --black: #000;
+  --white: #fff;
 }
 
 audio {
-	display: none;
+  display: none;
+}
+
+svg {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
 }
 
 .podcast {
-	padding: 7rem 0;
+  padding: 7rem 0;
 
-	&--light {
-		color: var(--black);
-	}
+  &--light {
+    color: var(--black);
+  }
 
-	&--dark {
-		color: var(--white);
-	}
+  &--dark {
+    color: var(--white);
+  }
 
-	&__player {
-		max-width: 670px;
-		margin: 0 auto;
-		display: flex;
-		overflow: hidden;
-		align-items: flex-start;
-	}
+  &__player {
+    max-width: 670px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
-	&__progressBar {
-		height: 10px;
-		width: 620px;
-		margin-top: 1rem;
-	}
+  &__main {
+    display: flex;
+    align-items: flex-start;
+  }
 
-	&__progressBar--light {
-		background-color: var(--black);
-	}
+  &__progressBar {
+    height: 10px;
+    width: 620px;
+    margin-top: 1rem;
+  }
 
-	&__progressBar--dark {
-		background-color: var(--white);
-	}
+  &__progressBar--light {
+    background-color: var(--black);
+  }
 
-	&__progressBar-playing {
-		height: 10px;
-	}
+  &__progressBar--dark {
+    background-color: var(--white);
+  }
 
-	&__progressBar-playing--light {
-		background-color: var(--white);
-	}
+  &__progressBar-playing {
+    height: 10px;
+  }
 
-	&__progressBar-playing--dark {
-		background-color: var(--black);
-	}
+  &__progressBar-playing--light {
+    background-color: var(--white);
+  }
 
-	&__button {
-		outline: none;
-		background: none;
-		border: none;
-		width: 25px;
-		height: 25px;
-		padding-top: 0.35rem;
-		margin-right: 1.5rem;
-		cursor: pointer;
+  &__progressBar-playing--dark {
+    background-color: var(--black);
+  }
 
-		&--light {
-			fill: black;
-		}
+  &__button-container {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 0.75rem;
+    background: none;
+    cursor: pointer;
+    margin-right: 0.75rem;
+  }
 
-		&--dark {
-			fill: white;
-		}
-	}
+  &__button {
+    &--light {
+      fill: black;
+    }
 
-	&__title {
-		font-family: 'Adieu', sans-serif;
-		font-size: 32px;
-		margin: 0;
-		padding: 0;
-		font-weight: 100;
-	}
+    &--dark {
+      fill: white;
+    }
+  }
 
-	&__meta {
-		list-style: none;
-		margin: 0;
-		padding: 1rem 0 0;
-		display: flex;
-		font-style: italic;
+  &__title {
+    font-family: "Adieu", sans-serif;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+  }
 
-		&Item {
-			margin-right: 0.25rem;
-		}
-	}
+  &__meta {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0 0;
+    display: flex;
+    font-style: italic;
+
+    &Item {
+      margin-right: 0.25rem;
+    }
+  }
 }
